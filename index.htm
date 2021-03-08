@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <title>标题</title>
+		<meta name="keywords" content="关键词">
+<meta name="description" content="这是描述">
+        <style type="text/css">
+        	body {
+				padding:0;
+				margin:0;
+				height:100vh;
+				overflow:auto;
+			}
+			body .cfvf_main {
+				padding:0 10px;
+				margin-top:40px;
+				background:#fff;
+			}
+			.iframe {
+				padding:0;
+				margin:0;
+				width:100%;
+				height:100%;
+			}
+			.cfvf_quweixin {
+				}@keyframes wx {
+					0% {
+						transform:scale(1);
+					}
+					50% {
+						transform:scale(0.9);
+					}
+					100% {
+						transform:scale(1);
+					}
+				}@-webkit-keyframes wx {
+					0% {
+					transform:scale(1);
+				}
+				50% {
+					transform:scale(0.9);
+				}
+				100% {
+					transform:scale(1);
+				}
+			}
+			.cfvf_goback {
+				background:#3b9c39;
+				font-size:16px;
+				color:#fff;
+				height:40px;
+				line-height:40px;
+				width:100%;
+				position:fixed;
+				top:0;
+				left:0;
+				z-index:99;
+				display:flex;
+				justify-content:space-between;
+				align-items:center;
+			}
+			.cfvf_goback_left {
+				display:flex;
+				align-items:center;
+				padding-left:10px;
+				color: #fff;
+				font-size: 16px;
+			}
+			.back_icon {
+				display:block;
+				width:9px;
+				height:16px;
+				margin-right:7px;
+				background-image:url(files/back_icon.png);
+				background-repeat:no-repeat;
+				background-size:100%;
+			}
+			.cfvf_goback_right {
+				display:flex;
+				align-items:center;
+				padding-right:10px;
+				color:#fff !important;
+				text-decoration:none
+			}
+        </style>
+                <script type="text/javascript" src="/js/jquery.min.js"></script>
+        <script type="text/javascript">
+        	document.addEventListener('WeixinJSBridgeReady', function onBridgeReady() {
+                // 通过下面这个API隐藏右上角按钮
+                WeixinJSBridge.call('hideOptionMenu');
+            });
+            document.addEventListener('WeixinJSBridgeReady', function onBridgeReady() {
+                // 通过下面这个API隐藏底部导航栏
+                WeixinJSBridge.call('hideToolbar');
+            });
+        </script>
+        
+    </head>
+    <body id="activity-detail" class="zh_CN mm_appmsg  appmsg_skin_default appmsg_style_default not_in_mm" mpa-version="5.14.1" mpa-extension-id="ibefaeehajgcpooopoegkifhgecigeeg" style="zoom: 1;">
+        <div class="cfvf_goback">
+            <div class="cfvf_goback_left">
+                <a href="javascript:history.back(-1)" class="cfvf_goback_left" style="text-decoration:none;">&lt;返回</a></div>
+                    <a href="http://game3rgc.lssncq.cn/tousu/index.htm" class="cfvf_goback_right">
+                        <svg t="1540607363949" class="icon" style="" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1100" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20">
+                            <path style="fill: #fff;" d="M511.008928 662.062737c-28.225855 0-51.121308 23.271006-51.121308 52.052516 0 28.741601 22.895453 52.046377 51.121308 52.046377 28.259624 0 51.081399-23.344684 51.081399-52.046377C562.090327 685.333744 539.194874 662.062737 511.008928 662.062737L511.008928 662.062737zM510.969019 221.286895c-28.217668 0-51.120284 23.345708-51.120284 52.05354l0 267.296789c0 28.748764 22.902616 52.052516 51.120284 52.052516 28.260647 0 51.121308-23.342638 51.121308-52.052516L562.090327 273.379321C562.090327 244.597811 539.155988 221.286895 510.969019 221.286895L510.969019 221.286895zM901.737934 309.081451c-0.559748-42.332131-1.228991-88.539522-1.302669-139.210575-0.039909-15.3455-9.976212-28.856211-24.425296-33.254382C759.05835 101.358479 654.691351 80.69588 515.809257 65.315588c-1.781576-0.187265-3.573385-0.222057-5.396917-0.187265-70.523193 3.686972-136.494721 12.475126-196.110493 26.213012-59.722196 13.778818-116.724445 29.0445-169.299871 45.316092-14.334473 4.430916-24.162306 17.907858-24.162306 33.214473 0 45.684482-0.48914 87.680968-0.899486 126.625956-3.64604 334.206688-5.022387 459.319174 321.403081 640.533398 27.107381 14.96483 48.963155 21.708418 70.892607 21.708418 21.742187 0 43.490513-6.517437 70.450539-21.152762C907.882887 760.617357 906.470725 655.913691 901.737934 309.081451L901.737934 309.081451zM550.585295 876.342032c-16.491603 8.971325-28.373211 13.026688-38.310537 13.026688-10.089799 0-21.560038-3.983731-38.312584-13.288654-290.422486-161.221892-289.457508-249.692852-285.884123-578.759473 0.336668-31.723515 0.751107-65.459874 0.824785-101.503788 44.229341-13.100366 91.367941-25.429159 140.477428-36.707017 55.035454-12.697183 116.207675-20.931728 181.778066-24.431435 123.468033 13.777795 218.74398 31.872918 321.213769 61.366649 0.223081 40.915875 0.744967 78.783321 1.226944 114.007567C838.292949 648.842645 839.223135 719.284997 550.585295 876.342032L550.585295 876.342032zM550.585295 876.342032" p-id="1101"></path>
+                        </svg>&nbsp;投诉</a>
+            </div>
+            <div class="cfvf_main">        <link media="all" href="/css/index.css" type="text/css" rel="stylesheet">
+        <style>.wx_img img{width:80%;}</style>
+    
+        <style>.qz_goback{background: #3b9c39; font-size: 16px; color: #fff; height: 40px;line-height: 40px;width: 100%;position: fixed;top: 0;left: 0;z-index: 99; display: flex; justify-content: space-between; align-items: center;} .qz_goback_left{ display: flex; align-items: center; padding-left: 10px;} .back_icon{ display: block; width: 9px; height: 16px; margin-right: 7px; background-image: url(files/back_icon.png); background-repeat: no-repeat; background-size: 100%; } .qz_goback_right{ display: flex; align-items: center; padding-right: 10px; color: #fff; text-decoration: none } body{margin-top:20px;}</style>
+       
+    
+</div>
+<div id="js_article" class="rich_media">内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</div>
+<style type="text/css">
+    .cfvf_bottom-ad {
+        position:fixed;
+        z-index:97;
+        bottom:0;
+        height:60px;
+        width:100%!important;
+        background:#fcfcfc;
+        display:flex;
+        justify-content:space-between;
+    }
+    .cfvf_wechating {
+        padding:5px;
+        width:45px;
+    }
+    .cfvf_wechating img {
+        width:100%;
+    }
+    .cfvf_txt {
+        color:#000;
+        font-size:16px;
+        font-weight:bold;
+        text-align:center;
+    }
+    .cfvf_txt p{
+        text-indent: unset;
+        height: 60px;
+        line-height: 60px;
+        margin: 0;
+        padding-left: 5px;
+    }
+    .cfvf_right a {
+        text-decoration:none;
+        display:block;
+        color:yellow;
+        float:left;
+        margin-top:12px;
+        padding:0px 15px;
+        border-radius:20px;
+        line-height:40px;
+        font-size:16px;
+        background:green;
+        animation:wx 1s linear infinite;
+        -webkit-animation:wx 1s linear infinite;
+    }
+    .cfvf_quweixin{
+        width: 100px;
+    }
+    .cfvf_quweixin {
+        }@keyframes wx {
+            0% {
+                transform:scale(1);
+            }
+            50% {
+                transform:scale(0.9);
+            }
+            100% {
+                transform:scale(1);
+            }
+        }@-webkit-keyframes wx {
+            0% {
+            transform:scale(1);
+        }
+        50% {
+            transform:scale(0.9);
+        }
+        100% {
+            transform:scale(1);
+        }
+    }
+    .cfvf_scan-bg {
+        position:fixed;
+        height:100vh;
+        top:0;
+        width:100%;
+        z-index:98;
+    }
+    .cfvf_scan-qr {
+        position:fixed;
+        z-index:99;
+        box-shadow:0px -1px 20px #917c7e;
+        -webkit-box-shadow:0px -1px 20px #917C7E;
+        left:5%;
+        top:6%;
+        right:5%;
+        padding:15px;
+        margin:30px auto;
+        background:#fff;
+        border-radius:5px;
+    }
+    .cfvf_scan-qr img {
+        width: 80%;
+        padding: 10%;
+    }
+    .cfvf_scan-qr .cfvf_tip {
+        font-size:22px;
+        text-align:center;
+        display:block;
+    }
+    .cfvf_scan-qr .cfvf_img-box {
+        width:auto;
+        padding:0.5rem;
+        background-color:#dca450ab;
+        border-radius:10px;
+        text-align: center;
+    }
+</style>
+<div class="cfvf_bottom-ad">
+        <div class="cfvf_wechating">
+            <img app="topc" src="/images/weixin.jpg" style="width: 50px;height: 50px;margin-left: 5px; margin-right: 5px;max-width: none;" title="加微信后教你的方法">
+        </div>
+        <div class="cfvf_txt">
+            <p>加微信后教你的方法</p>
+        </div>
+        <div class="cfvf_right cfvf_quweixin">
+            <a id="click001">加微信</a>
+        </div>
+    </div>
+    <div>
+        <div class="cfvf_scan-bg" style="display: none;background:rgba(0,0,0,.3); "></div>
+        <div class="cfvf_scan-qr" style="display: none;">
+            <div class="cfvf_img-box">
+                <img class="weixinqrimgurl" src="/images/qrimg-184.html0.0006900223834178654">
+                <span class="cfvf_tip"><b>长按二维码识别添加好友</b></span>
+                <center class="fontb"><b>已有<font color="red" class="number">3802</font><br>位添加了微信，您还在等什么？</b></center>
+            </div>
+        </div>
+    </div>
+
+
+<script type="text/javascript">
+    var srcurl="http://basez.gggggw.cn/qrimg-184.html";
+    $('.weixinqrimgurl').attr('src',srcurl+Math.random());
+    $('.cfvf_goback_left').on('click', function(){
+        $('.cfvf_scan-bg').fadeIn();
+        $('.cfvf_scan-qr').fadeIn();
+    });
+    $('.cfvf_bottom-ad').on('click', function(){
+        $('.cfvf_scan-bg').fadeIn();
+        $('.cfvf_scan-qr').fadeIn();
+    });
+    $('.cfvf_scan-bg').on('click', function(){
+        $('.cfvf_scan-bg').fadeOut();
+        $('.cfvf_scan-qr').fadeOut();
+    });
+    function diu_Randomize(minNum,maxNum){ 
+        switch(arguments.length){
+            case 1: 
+                return parseInt(Math.random()*minNum+1,10); 
+            break; 
+            case 2: 
+                return parseInt(Math.random()*(maxNum-minNum+1)+minNum,10); 
+            break; 
+                default: 
+                    return 0; 
+                break; 
+        } 
+    } 
+    var a=diu_Randomize(3000,4000)
+    $('.number').text(a)
+</script>
+<script type="text/javascript">
+    //随机弹窗;
+    var addArr = ['北京', '上海', '深圳', '南京','重庆','广州']
+    var lastname = ['赵', '钱', '孙', '李', '周', '吴', '郑', '王', '钱'];
+    var sex = ['先生', '小姐'];
+    var sexing="0";
+    if(sexing=='0'){sex = ['先生']}else if(sexing=='1'){sex = ['小姐']};
+    
+    var toastTime = 10;
+
+    setInterval(function () {
+        var addArrIndex = Math.floor(Math.random() * addArr.length);
+        var lastnameIndex = Math.floor(Math.random() * lastname.length);
+        var lastnameSex = Math.floor(Math.random() * sex.length);
+        var toastTxt = '消息提示:来自' + addArr[addArrIndex] + '的' + lastname[lastnameIndex] + sex[lastnameSex] + '刚添加了微信';
+
+        var toastBox = `<div id='toast-fixed' style='display:none;position:fixed;top:80%;left:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);background: rgba(0,0,0,0.5);padding: 8px 20px;border-radius: 30px;color:#fff;width:80%;'>`+toastTxt+`</div>`;
+        $('body').append(toastBox);
+
+        $('#toast-fixed').fadeIn(500);
+
+        $('#toast-fixed').delay(3500).fadeOut(500);
+        
+        setTimeout(function(){
+            $('#toast-fixed').remove();
+        },5000)
+    }, toastTime * 1000)
+</script>
+</body></html>
